@@ -6,7 +6,7 @@ version: 2.1
 jobs:
   say-hello:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/node:stable
     steps:
       - checkout
       - run:
