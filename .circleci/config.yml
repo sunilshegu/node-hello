@@ -15,7 +15,7 @@ jobs:
           command: npm install
       - run:
           name: Build docker image
-          command: docker build -t test-image .
+          command: docker build -t sunilshegu/test-image .
       - run:
           name: Push to docker hub
           command: docker push sunilshegu/test-image
