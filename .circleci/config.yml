@@ -9,6 +9,7 @@ jobs:
       - image: circleci/node
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: Install deps
           command: npm install
