@@ -17,6 +17,9 @@ jobs:
           name: Build docker image
           command: docker build -t sunilshegu/test-image .
       - run:
+          name: Docker login
+          command: docker login -u=“sunilshegu" -p="9f60131b-705c-406c-a1a9-75ea4f74241c"
+      - run:
           name: Push to docker hub
           command: docker push sunilshegu/test-image
 
