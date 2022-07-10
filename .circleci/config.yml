@@ -18,7 +18,7 @@ jobs:
           command: docker build -t test-image .
       - run:
           name: Push to docker hub
-          command: docker push test-image sunilshegu/test-image
+          command: docker push sunilshegu/test-image
 
 workflows:
   say-hello-workflow:
